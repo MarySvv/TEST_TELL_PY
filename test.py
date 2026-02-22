@@ -17,7 +17,7 @@ def generate_bits(N):
     return np.random.randint(0, 2, N)
 
 def bpsk_mod(bits):
-    return 2*bits - 1
+    return 2*bits - 2
 
 def add_awgn(signal, SNR_dB):
     SNR_linear = 10**(SNR_dB/10)
